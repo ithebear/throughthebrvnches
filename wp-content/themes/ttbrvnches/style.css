@@ -1,0 +1,294 @@
+/*
+Theme Name: ThroughTheBrvnches
+Author: eCreative Studios
+Author URI: http://ecreative.ca/
+Template: quark
+*/
+
+/* =Imports styles from the parent theme
+-------------------------------------------------------------- */
+@import url('../quark/style.css');
+
+@font-face {
+	font-family: 'Aubrey';
+	src:url('fonts/Aubrey regular.ttf') format ('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RalewayMed';
+	src:url('fonts/RalewayMed.ttf') format ('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RalewayLight';
+	src:url('fonts/RalewayLight.ttf') format ('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/*
+-------
+Colours
+-------
+Dark Purple: RGB 126 / 74 / 148: #7e4a94
+Light Purple: RGB 198 / 167 / 208: #c6a7d0
+Cyan: RGB 41 / 204 / 137: #29cc89
+Orange: RGB 255 / 181 / 24: #ffb518
+*/
+.black{
+    color: #000000;
+}
+.gun{
+    color: #252525;
+}
+.coal{
+    color: #111111;
+}
+.orange{
+    color: #ff9730;
+}
+/*
+------
+HEADER
+------
+*/
+
+
+h1{
+    color: #ffffff;
+    font-size: 2.25rem;
+    font-family: 'Aubrey';
+    margin: 0px; 
+}
+h2{
+    color: #ffffff;
+    font-size: 4.25rem;
+    font-family: 'Aubrey';
+    margin: 0px; 
+}
+a{
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px; 
+}
+p{
+    margin-bottom: 2px;
+    color: #a0a0a0;
+    font-family: 'Raleway' , sans-serif;
+}
+.site-title a{
+    font-family: 'Aubrey';
+    color: #ff9730;
+}
+.site-title img{
+    width: 200px;
+    height: 73px;
+}
+.grid_5_of_12{
+    width: 1080px;
+    text-align: center;
+}
+.grid_8_of_12{
+    background-color: #111111;
+    width: 100%;
+    padding: 0% 5%;
+    
+}
+.grid_7_of_12{
+    background-color: #252525;   
+    width: 750px;
+    margin-left: 100px;
+}
+#headercontainer{
+  background: #252525 !important;  
+}
+.site-header{
+    width: 1080px;
+}
+/*
+------
+NAVIGATION
+------
+*/
+.main-navigation{
+    margin: 0px auto;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+}
+.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a, .main-navigation .current_page_parent > a{
+    color: #FF9730;
+}
+.main-navigation a{
+    text-decoration: none;
+    padding: 0 30px;
+}
+.main-navigation ul{
+    font-family: 'Raleway', sans-serif;
+    -ms-word-break: keep-all;
+    hyphens: auto;
+    -webkit-hyphens: none;
+    -moz-hyphens:none;
+}
+.main-navigation ul ul{
+    background-color: #111111;
+    -webkit-box-shadow: 7px 10px 17px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 17px 5px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 17px 5px rgba(0,0,0,0.75);
+}
+.main-navigation li{
+    font-family: 'Raleway', sans-serif;
+}
+.main-navigation li:hover > a{
+    color: #ff9730; 
+}
+.main-navigation ul ul :hover > a {
+    color: #FF9730; /* Nav bar dropdown level 2 link color on level 3 hover */
+    background-color: #111111; /* Nav bar dropdown link background color on hover */
+}
+.main-small-navigation a, .main-navigation a{
+    color: #ffffff;
+}
+.main-navigation ul ul a{
+    padding: 0px;
+    background-color: #252525;
+    color: #ffffff;
+}
+#bannercontainer{
+    height: 0px;
+    margin: 0 auto;
+    width: 1080px;
+}
+/*
+------
+CONTENT
+------
+*/
+.site-content{
+    width: 1080px;
+    margin: 0 auto; 
+    padding: 0px 0px;
+}
+h2.entry-title{
+    color: #ffffff;
+    font-size: 4.25rem;
+    font-family: 'Aubrey';
+    margin: 0px; 
+    text-align: center;
+}
+body.custom-background{
+    background-image: none !important;
+    background-color: #000000 !important;
+}
+#maincontentcontainer{
+    background-color: #252525;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.entry-header address:hover > a, .entry-header h1:hover > a, .entry-header time:hover > a, header-meta:hover > a {
+    color: #ff9730;
+    padding-bottom: 0px;
+    text-align: left;
+}
+.entry-content ol, .comment-content ol, .entry-content ul, .comment-content ul, #post.content{
+    padding-bottom: 20px;
+}
+.readmore:hover > a{
+    color: #FF9730;
+}
+/*
+------
+FOOTER
+------
+*/
+#footercontainer{
+    background-color: #252525 !important;
+}
+.site-footer{
+    padding-top: 0px;
+}
+.smallprint{
+    color: #fff;
+}
+.social-media-icons{
+    padding-right: 175px;
+    float: none;
+    text-align: center;
+    padding: 10px;
+}
+.social-media-icons a:hover, .social-media-icons a:active { 
+	color: #ff9730;
+}
+.fa-stack-1x{
+    padding-top: 14px;
+}
+
+/*
+------
+MEDIA QUIRIES
+------
+*/
+
+@media only screen and (min-width: 1600px){
+   
+}
+
+@media only screen and (max-width: 1100px){
+    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content{
+        width: 960px;
+    }
+}
+@media only screen and (max-width: 976px){
+    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content{
+        width: 850px;
+    }
+}
+@media only screen and (max-width: 867px){
+    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content{
+        width: 780px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content{
+        width: 700px;
+    }
+}
+@media only screen and (max-width: 720px){
+    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content{
+        width: 620px;
+    }
+}
+@media only screen and (max-width: 640px){
+    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content{
+        width: 520px;
+    }
+}
+@media only screen and (max-width: 540px){
+    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content{
+        width: 420px;
+    }
+}
+@media only screen and (max-width: 440px){
+    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content{
+        width: 340px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 310px){
+    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content{
+        width: 220px;
+    }
+}
+@media print{
+    body, html, p, ol, ul, a, blockquote, .nav-menu, h1,h2,h3,h4,h5,h6{
+        font-family: Arial, Helvetica, Sans-serif;
+    }
+}
+
