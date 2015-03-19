@@ -81,10 +81,13 @@ p{
 .site-title a{
     font-family: 'Aubrey';
     color: #ff9730;
+    padding-right: 30px;
+    padding-bottom: 20px;
 }
 .site-title img{
     width: 200px;
     height: 73px;
+    margin-bottom: 20px;  
 }
 .grid_5_of_12{
     width: 1080px;
@@ -97,15 +100,19 @@ p{
     
 }
 .grid_7_of_12{
-    background-color: #252525;   
-    width: 750px;
-    margin-left: 100px;
+    background-color: #515151;   
+    width: 1080px;
+      margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 #headercontainer{
-  background: #252525 !important;  
+  background-color: #000000 !important;  
 }
 .site-header{
     width: 1080px;
+    background-color: #252525 !important;
 }
 /*
 ------
@@ -117,6 +124,7 @@ NAVIGATION
     text-align: center;
     text-transform: uppercase;
     padding: 10px 20px 10px 20px;
+    width: 775px;
 }
 .main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a, .main-navigation .current_page_parent > a{
     color: #FF9730;
@@ -133,7 +141,7 @@ NAVIGATION
     -moz-hyphens:none;
 }
 .main-navigation ul ul{
-    background-color: #111111;
+    background-color: #515151;
     -webkit-box-shadow: 7px 10px 17px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 10px 17px 5px rgba(0,0,0,0.75);
     box-shadow: 7px 10px 17px 5px rgba(0,0,0,0.75);
@@ -146,15 +154,22 @@ NAVIGATION
 }
 .main-navigation ul ul :hover > a {
     color: #FF9730; /* Nav bar dropdown level 2 link color on level 3 hover */
-    background-color: #111111; /* Nav bar dropdown link background color on hover */
+    background-color: #515151; /* Nav bar dropdown link background color on hover */
 }
 .main-small-navigation a, .main-navigation a{
     color: #ffffff;
 }
 .main-navigation ul ul a{
     padding: 0px;
-    background-color: #252525;
+    background-color: #515151;
     color: #ffffff;
+}
+.primary-mobile-nav{
+    display:none;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    position:relative;
 }
 #bannercontainer{
     height: 0px;
@@ -247,26 +262,30 @@ MEDIA QUIRIES
 }
 
 @media only screen and (max-width: 1100px){
-    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 960px;
     }
 }
 @media only screen and (max-width: 976px){
-    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 850px;
     }
     header .main-navigation {
 		margin-top: 0;
 		float: none;
+                width: 720px;
 	}
+        .grid_7_of_12{
+            padding-bottom: 10px;
+        }
 }
 @media only screen and (max-width: 867px){
-    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 780px;
     }
 }
 @media only screen and (max-width: 800px){
-    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 700px;
     }
     .grid_7_of_12{
@@ -277,27 +296,27 @@ MEDIA QUIRIES
      .main-navigation{
         display:none;
     }
-    #small-menu{
+    .primary-mobile-nav{
         display:block;
     }
 }
 @media only screen and (max-width: 720px){
-    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 620px;
     }
 }
 @media only screen and (max-width: 640px){
-    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 520px;
     }
 }
 @media only screen and (max-width: 540px){
-    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer,.grid_5_of_12.site-title, .grid_7_of_12{
+    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer,.grid_5_of_12.site-title, .grid_7_of_12{
         width: 420px;
     }
 }
 @media only screen and (max-width: 440px){
-    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 340px;
     }
 }
@@ -307,7 +326,7 @@ MEDIA QUIRIES
     }
 }
 @media only screen and (max-width: 310px){
-    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 220px;
     }
 }
