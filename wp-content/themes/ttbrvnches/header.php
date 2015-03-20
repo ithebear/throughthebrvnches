@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="maincontentcontainer">
  *
- * @package Quark
+ * @package ttbrvnches
  * @since Quark 1.0
  */
 ?><!doctype html>
@@ -19,9 +19,21 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<?php
+        if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false))
+        {
+        ?>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <?php
+        }
+        ?>
 
-	<meta http-equiv="cleartype" content="on">
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<?php
+        if (wp_is_mobile()){
+            echo '<meta http-equiv="cleartype" content="on" />';
+        }
+        ?>
 
 	<!-- Responsive and mobile friendly stuff -->
 	<meta name="HandheldFriendly" content="True">
@@ -102,4 +114,3 @@
 	</div> <!-- /#bannercontainer -->
 
 	<div id="maincontentcontainer">
-		<?php	do_action( 'quark_before_woocommerce' ); ?>

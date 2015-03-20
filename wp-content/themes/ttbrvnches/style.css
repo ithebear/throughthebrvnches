@@ -54,18 +54,14 @@ HEADER
 ------
 */
 
-
-h1{
+h1, h2{
     color: #ffffff;
-    font-size: 2.25rem;
     font-family: 'Aubrey';
-    margin: 0px; 
+    font-size: 4.25rem;
+    margin: 0px;
 }
 h2{
-    color: #ffffff;
-    font-size: 4.25rem;
-    font-family: 'Aubrey';
-    margin: 0px; 
+    font-size: 2.25rem; 
 }
 a{
     color: #ffffff;
@@ -243,7 +239,7 @@ body.page-id-7 #bannercontainer{
     display: block;
     height: 125px;
     background-color: #111111;
-    background-image: url('http://www.throughthebrvnches.com/wp-content/themes/ttbrvnches/images/monthlyfeature.png');
+    background-image: url('images/monthlyfeature.png');
     background-repeat: no-repeat;
     background-position: center top; 
     margin-top: 10px;
@@ -257,7 +253,7 @@ body.page-id-2 #bannercontainer{
     display: block;
     height: 125px;
     background-color: #111111;
-    background-image: url('http://www.throughthebrvnches.com/wp-content/themes/ttbrvnches/images/about.png');
+    background-image: url('images/about.png');
     background-repeat: no-repeat;
     background-position: center top; 
     margin-top: 10px;
