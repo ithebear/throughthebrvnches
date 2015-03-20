@@ -8,25 +8,8 @@ Template: quark
 /* =Imports styles from the parent theme
 -------------------------------------------------------------- */
 @import url('../quark/style.css');
+@import url('fonts/webfontkit/style.css')
 
-@font-face {
-	font-family: 'Aubrey';
-	src:url('fonts/Aubrey regular.ttf') format ('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'RalewayMed';
-	src:url('fonts/RalewayMed.ttf') format ('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'RalewayLight';
-	src:url('fonts/RalewayLight.ttf') format ('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
 /*
 -------
 Colours
@@ -56,7 +39,7 @@ HEADER
 
 h1, h2{
     color: #ffffff;
-    font-family: 'Aubrey';
+    font-family: 'aubreyregular';
     font-size: 4.25rem;
     margin: 0px;
 }
@@ -66,16 +49,16 @@ h2{
 a{
     color: #ffffff;
     font-size: 1.25rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'ralewayregular', sans-serif;
     margin: 0px; 
 }
 p{
     margin-bottom: 2px;
     color: #a0a0a0;
-    font-family: 'Raleway' , sans-serif;
+    font-family: 'ralewayregular' , sans-serif;
 }
 .site-title a{
-    font-family: 'Aubrey';
+    font-family: 'aubreyregular';
     color: #ff9730;
     padding-right: 30px;
     padding-bottom: 20px;
@@ -83,7 +66,11 @@ p{
 .site-title img{
     width: 200px;
     height: 73px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px; 
+    background-image: url('/images/headerlogo.png') !important;
+}
+.site-title{
+    background-image: url('/images/headerlogo.png') !important;
 }
 .grid_5_of_12{
     width: 1080px;
@@ -134,7 +121,7 @@ NAVIGATION
     padding: 0 30px;
 }
 .main-navigation ul{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'ralewayregular', sans-serif;
     -ms-word-break: keep-all;
     hyphens: auto;
     -webkit-hyphens: none;
@@ -147,7 +134,7 @@ NAVIGATION
     box-shadow: none;
 }
 .main-navigation li{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'ralewayregular', sans-serif;
 }
 .main-navigation li:hover > a{
     color: #ff9730; 
@@ -183,7 +170,7 @@ CONTENT
 h2.entry-title{
     color: #ffffff;
     font-size: 4.25rem;
-    font-family: 'Aubrey';
+    font-family: 'aubreyregular';
     margin: 0px; 
     text-align: center;
 }
@@ -235,30 +222,28 @@ EVENTS: page-id-11
 CONTENT: page-id-13
 */
 
-body.page-id-7 #bannercontainer{
+body.page-id-129 #bannercontainer{
     display: block;
     height: 125px;
     background-color: #111111;
     background-image: url('images/monthlyfeature.png');
     background-repeat: no-repeat;
     background-position: center top; 
-    margin-top: 10px;
 }
-body.page-id-7 .entry-header{
+body.page-id-129 .entry-header{
     margin: 0px;
     margin: 0rem;
 }
 
-body.page-id-2 #bannercontainer{
+body.page-id-128 #bannercontainer{
     display: block;
     height: 125px;
     background-color: #111111;
     background-image: url('images/about.png');
     background-repeat: no-repeat;
     background-position: center top; 
-    margin-top: 10px;
 }
-body.page-id-2 .entry-header{
+body.page-id-128 .entry-header{
     margin: 0px;
     margin: 0rem;
 }
