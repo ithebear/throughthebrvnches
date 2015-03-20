@@ -8,7 +8,7 @@ Template: quark
 /* =Imports styles from the parent theme
 -------------------------------------------------------------- */
 @import url('../quark/style.css');
-@import url('fonts/webfontkit/style.css')
+@import url('fonts/webfontkit/style.css');
 
 /*
 -------
