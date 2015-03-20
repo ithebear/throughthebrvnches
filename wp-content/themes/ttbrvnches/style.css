@@ -93,6 +93,10 @@ p{
     width: 1080px;
     text-align: center;
 }
+.grid_4_of_12{
+    width: 25%;
+    text-align: center;
+}
 .grid_8_of_12{
     background-color: #111111;
     width: 100%;
@@ -142,9 +146,9 @@ NAVIGATION
 }
 .main-navigation ul ul{
     background-color: #515151;
-    -webkit-box-shadow: 7px 10px 17px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 10px 17px 5px rgba(0,0,0,0.75);
-    box-shadow: 7px 10px 17px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 .main-navigation li{
     font-family: 'Raleway', sans-serif;
@@ -163,13 +167,6 @@ NAVIGATION
     padding: 0px;
     background-color: #515151;
     color: #ffffff;
-}
-.primary-mobile-nav{
-    display:none;
-    width: 90%;
-    margin: 0 auto;
-    height: 100%;
-    position:relative;
 }
 #bannercontainer{
     height: 0px;
@@ -202,7 +199,7 @@ body.custom-background{
     background-color: #000000 !important;
 }
 #maincontentcontainer{
-    background-color: #252525;
+    background-color: #111111;
     width: 1080px;
     margin-left: auto;
     margin-right: auto;
@@ -223,6 +220,75 @@ body.custom-background{
 }
 .edit-link{
     padding-bottom: 20px;
+}
+.home.page .site-content{
+    padding: 0 30px;
+}
+form#commentform, div#respond {
+    display: none;
+}
+
+/*
+------
+PAGE SPECIFIC CONTENT
+------
+ABOUT: page-id-2
+FEATURED: pade-id-7
+GENRES: pade-id-9
+EVENTS: page-id-11
+CONTENT: page-id-13
+*/
+
+body.page-id-7 #bannercontainer{
+    display: block;
+    height: 125px;
+    background-color: #111111;
+    background-image: url('http://www.throughthebrvnches.com/wp-content/themes/ttbrvnches/images/monthlyfeature.png');
+    background-repeat: no-repeat;
+    background-position: center top; 
+    margin-top: 10px;
+}
+body.page-id-7 .entry-header{
+    margin: 0px;
+    margin: 0rem;
+}
+
+body.page-id-2 #bannercontainer{
+    display: block;
+    height: 125px;
+    background-color: #111111;
+    background-image: url('http://www.throughthebrvnches.com/wp-content/themes/ttbrvnches/images/about.png');
+    background-repeat: no-repeat;
+    background-position: center top; 
+    margin-top: 10px;
+}
+body.page-id-2 .entry-header{
+    margin: 0px;
+    margin: 0rem;
+}
+
+/*
+------
+WIDGETS
+------
+*/
+#maincontentcontainer .home-sidebar .widget{
+    background-color: #515151;
+}
+#wp-calendar #today{
+    background-color: #252525;
+}
+#wp-calendar:hover > a{
+    color: #FF9730;
+}
+.wp-polls ul li, .wp-polls-ul li, .wp-polls-ans ul li{
+    color: #ffffff;
+}
+h3.widget-title{
+    color: #ffffff;
+}
+.wp-polls p{
+    color: #ffffff;
 }
 /*
 ------
