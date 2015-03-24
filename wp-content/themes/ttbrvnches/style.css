@@ -85,6 +85,7 @@ a{
 }
 p{
     margin-bottom: 2px;
+    padding: 20px;
     color: #a0a0a0;
     font-family: 'ralewayregular' , sans-serif;
 }
@@ -215,6 +216,11 @@ h2.title, .title a{
 }
 .post-content{
     margin-bottom: 45px;
+    background-color: #252525;
+    padding: 5px 25px;
+}
+.entry-content{
+    background-color: #252525;
 }
 a.readmore{
     color: #ffffff;
@@ -261,7 +267,9 @@ form#commentform, div#respond {
 hr{
     display: none;
 }
-
+a:hover, a:active{
+    color: #ff9730;
+}
 /*
 ------
 PAGE SPECIFIC CONTENT
@@ -288,7 +296,9 @@ body.page-id-129 .entry-header{
 body.page-id-129 h2.title, .title a{
     margin-top: 20px;
 }
-
+body.page-id-129 .entry-content{
+    background-color: #111111;
+}
 body.page-id-128 #bannercontainer{
     display: block;
     height: 125px;
@@ -301,8 +311,9 @@ body.page-id-128 .entry-header{
     margin: 0px;
     margin: 0rem;
 }
-a:hover, a:active{
-    color: #ff9730;
+body.page-id-128 .entry-content{
+    background-color: #111111;
+    padding: 10px 25px;
 }
 /*
 ------
