@@ -32,6 +32,14 @@ Template: quark
 	     url('fonts/RalewayLight-webfont.ttf') format('truetype'),
 	     url('fonts/RalewayLight-webfont.svg#webfont') format('svg');
 }
+@font-face{ 
+	font-family: 'comfortaaregular';
+	src: url('fonts/Comfortaa regular-webfont.eot');
+	src: url('fonts/Comfortaa regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Comfortaa regular-webfont.woff') format('woff'),
+	     url('fonts/Comfortaa regular-webfont.ttf') format('truetype'),
+	     url('fonts/Comfortaa regular-webfont.svg#webfont') format('svg');
+}
 
 /*
 -------
@@ -110,9 +118,9 @@ p{
     
 }
 .grid_7_of_12{
-    background-color: #515151;   
-    width: 1080px;
-      margin-left: 0px;
+  background-color: #515151;   
+  width: 1080px;
+  margin-left: 0px;
   margin-right: 0px;
   padding-right: 100px;
   padding-left: 100px;
@@ -124,6 +132,9 @@ p{
     width: 1080px;
     background-color: #252525 !important;
 }
+header .main-navigation {
+                width: 745px;
+	}
 /*
 ------
 NAVIGATION
@@ -161,13 +172,14 @@ NAVIGATION
 .main-navigation li{
     font-family: 'ralewayregular', sans-serif;
 }
-.main-navigation li:hover > a{
-    color: #ff9730; 
+.main-navigation li:hover > a, .main-navigation ul ul :hover > a{
+    color: #ff9730;    
 }
-.main-navigation ul ul :hover > a {
-    color: #FF9730; /* Nav bar dropdown level 2 link color on level 3 hover */
-    background-color: #515151; /* Nav bar dropdown link background color on hover */
+.main-navigation ul ul :hover > a{
+    -webkit-transition: background-color .5s; /* For Safari 3.1 to 6.0 */
+    transition: background-color .5s; 
 }
+ 
 .main-small-navigation a, .main-navigation a{
     color: #ffffff;
 }
@@ -196,7 +208,7 @@ h2.title, .title a{
     color: #ffffff;
     font-size: 35px;
     font-size: 2.25rem;
-    font-family: 'ralewayregular';
+    font-family: 'ralewaylight';
     text-decoration: none;
     margin: 0px; 
     text-align: center;
@@ -284,7 +296,25 @@ body.page-id-128 .entry-header{
     margin: 0px;
     margin: 0rem;
 }
+a:hover, a:active{
+    color: #ff9730;
+}
+/*
+------
+POST PAGE STYLING
+------
+*/
 
+.post-categories a, .post-tags a{
+    -webkit-transition: background-color .5s; /* For Safari 3.1 to 6.0 */
+    transition: background-color .5s;
+}
+.post-categories a:hover, .post-tags a:hover{
+    background-color:#ff9730;
+}
+.header-meta a:hover{
+    color: #ffffff;
+}
 /*
 ------
 WIDGETS
