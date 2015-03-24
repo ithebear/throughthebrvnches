@@ -118,22 +118,19 @@ p{
     
 }
 .grid_7_of_12{
-  background-color: #515151;   
-  width: 1080px;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-right: 100px;
-  padding-left: 100px;
-}
-#headercontainer{
-  background-color: #000000 !important;  
+    background-color: #515151;   
+    width: 1080px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 .site-header{
     width: 1080px;
     background-color: #252525 !important;
 }
 header .main-navigation {
-                width: 745px;
+    width: 745px;
 	}
 /*
 ------
@@ -206,16 +203,18 @@ CONTENT
 }
 h2.title, .title a{
     color: #ffffff;
+    background-color: #515151;
     font-size: 35px;
     font-size: 2.25rem;
     font-family: 'ralewaylight';
     text-decoration: none;
-    margin: 0px; 
     text-align: center;
     -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
     transition: color .5s;
-    padding: 10px 0;
-    
+    padding: 15px 0;   
+}
+.post-content{
+    margin-bottom: 45px;
 }
 a.readmore{
     color: #ffffff;
@@ -235,8 +234,8 @@ img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"]{
     margin: 20px;
 }
 body.custom-background{
-    background-image: none !important;
-    background-color: #000000 !important;
+    background-image: url('images/bg.jpg') !important;
+    background-color: #000;
 }
 #maincontentcontainer{
     background-color: #111111;
@@ -257,6 +256,9 @@ body.custom-background{
     padding: 0 30px;
 }
 form#commentform, div#respond {
+    display: none;
+}
+hr{
     display: none;
 }
 
@@ -282,6 +284,9 @@ body.page-id-129 #bannercontainer{
 body.page-id-129 .entry-header{
     margin: 0px;
     margin: 0rem;
+}
+body.page-id-129 h2.title, .title a{
+    margin-top: 20px;
 }
 
 body.page-id-128 #bannercontainer{
@@ -359,7 +364,7 @@ FOOTER
     padding: 10px;
 }
 .social-media-icons a:hover, .social-media-icons a:active { 
-	color: #ff9730;
+    color: #ff9730;
 }
 .fa-stack-1x{
     padding-top: 14px;
@@ -379,22 +384,22 @@ MEDIA QUIRIES
     .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 960px;
     }
-        header .main-navigation {
-                width: 680px;
-	}
+    header .main-navigation {
+        width: 680px;
     }
+}
 @media only screen and (max-width: 976px){
     .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 850px;
     }
     header .main-navigation {
-		margin-top: 0;
-		float: none;
-                width: 630px;
-	}
-        .grid_7_of_12{
-            padding-bottom: 10px;
-        }
+	margin-top: 0;
+	float: none;
+        width: 630px;
+    }
+    .grid_7_of_12{
+        padding-bottom: 10px;
+    }
 }
 @media only screen and (max-width: 867px){
     .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
@@ -417,8 +422,8 @@ MEDIA QUIRIES
         display:block;
     }
     h2.title, .title a, a.readmore{
-    font-size: 24px;
-    font-size: 1.5rem;
+        font-size: 24px;
+        font-size: 1.5rem;
 }
 @media only screen and (max-width: 720px){
     .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
