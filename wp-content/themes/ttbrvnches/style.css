@@ -8,7 +8,30 @@ Template: quark
 /* =Imports styles from the parent theme
 -------------------------------------------------------------- */
 @import url('../quark/style.css');
-@import url('fonts/webfontkit/style.css');
+@font-face{ 
+	font-family: 'aubreyregular';
+	src: url('fonts/Aubrey regular-webfont.eot');
+	src: url('fonts/Aubrey regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Aubrey regular-webfont.woff') format('woff'),
+	     url('fonts/Aubrey regular-webfont.ttf') format('truetype'),
+	     url('fonts/Aubrey regular-webfont.svg#webfont') format('svg');
+}
+@font-face{ 
+	font-family: 'ralewayregular';
+	src: url('fonts/Raleway regular-webfont.eot');
+	src: url('fonts/Raleway regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Raleway regular-webfont.woff') format('woff'),
+	     url('fonts/Raleway regular-webfont.ttf') format('truetype'),
+	     url('fonts/Raleway regular-webfont.svg#webfont') format('svg');
+}
+@font-face{ 
+	font-family: 'ralewaylight';
+	src: url('fonts/RalewayLight-webfont.eot');
+	src: url('fonts/RalewayLight-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/RalewayLight-webfont.woff') format('woff'),
+	     url('fonts/RalewayLight-webfont.ttf') format('truetype'),
+	     url('fonts/RalewayLight-webfont.svg#webfont') format('svg');
+}
 
 /*
 -------
@@ -120,12 +143,14 @@ NAVIGATION
     text-decoration: none;
     padding: 0 30px;
 }
-.main-navigation ul{
-    font-family: 'ralewayregular', sans-serif;
+.main-navigation ul a{
+    font-family: 'ralewaylight', sans-serif;
     -ms-word-break: keep-all;
     hyphens: auto;
     -webkit-hyphens: none;
     -moz-hyphens:none;
+    -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
+    transition: color .5s;
 }
 .main-navigation ul ul{
     background-color: #515151;
@@ -167,15 +192,35 @@ CONTENT
     padding: 0px 0px;
     position: relative;
 }
-h2.entry-title{
+h2.title, .title a{
     color: #ffffff;
-    font-size: 4.25rem;
-    font-family: 'aubreyregular';
+    font-size: 35px;
+    font-size: 2.25rem;
+    font-family: 'ralewayregular';
+    text-decoration: none;
     margin: 0px; 
     text-align: center;
+    -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
+    transition: color .5s;
+    padding: 10px 0;
+    
+}
+a.readmore{
+    color: #ffffff;
+    font-family: 'ralewayregular';
+    font-size: 20px;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin: 0px; 
+    text-align: center;
+    -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
+    transition: color .5s;
 }
 .grid_8_of_12 .entry-title{
     display: none;
+}
+img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"]{
+    margin: 20px;
 }
 body.custom-background{
     background-image: none !important;
@@ -187,19 +232,11 @@ body.custom-background{
     margin-left: auto;
     margin-right: auto;
 }
-.entry-header address:hover > a, .entry-header h1:hover > a, .entry-header time:hover > a, header-meta:hover > a {
+.entry-header address:hover > a, .entry-header h1:hover > a, .entry-header time:hover > a, header-meta:hover > a, h2.title:hover > a, .readmore:hover > a, .edit-link:hover > a, a.readmore:hover{
     color: #ff9730;
-    padding-bottom: 0px;
-    text-align: left;
 }
 .entry-content ol, .comment-content ol, .entry-content ul, .comment-content ul, #post.content{
     padding-bottom: 20px;
-}
-.readmore:hover > a{
-    color: #FF9730;
-}
-.edit-link:hover > a{
-    color: #FF9730;
 }
 .edit-link{
     padding-bottom: 20px;
@@ -312,7 +349,10 @@ MEDIA QUIRIES
     .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 960px;
     }
-}
+        header .main-navigation {
+                width: 680px;
+	}
+    }
 @media only screen and (max-width: 976px){
     .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 850px;
@@ -320,7 +360,7 @@ MEDIA QUIRIES
     header .main-navigation {
 		margin-top: 0;
 		float: none;
-                width: 720px;
+                width: 630px;
 	}
         .grid_7_of_12{
             padding-bottom: 10px;
@@ -346,6 +386,9 @@ MEDIA QUIRIES
     .primary-mobile-nav{
         display:block;
     }
+    h2.title, .title a, a.readmore{
+    font-size: 24px;
+    font-size: 1.5rem;
 }
 @media only screen and (max-width: 720px){
     .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
@@ -383,3 +426,4 @@ MEDIA QUIRIES
     }
 }
 
+}
