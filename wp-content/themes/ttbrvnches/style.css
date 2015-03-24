@@ -8,6 +8,7 @@ Template: quark
 /* =Imports styles from the parent theme
 -------------------------------------------------------------- */
 @import url('../quark/style.css');
+/*Load webfonts*/
 @font-face{ 
 	font-family: 'aubreyregular';
 	src: url('fonts/Aubrey regular-webfont.eot');
@@ -40,7 +41,6 @@ Template: quark
 	     url('fonts/Comfortaa regular-webfont.ttf') format('truetype'),
 	     url('fonts/Comfortaa regular-webfont.svg#webfont') format('svg');
 }
-
 /*
 -------
 Colours
@@ -67,7 +67,6 @@ Orange: RGB 255 / 181 / 24: #ffb518
 HEADER
 ------
 */
-
 h1, h2{
     color: #ffffff;
     font-family: 'aubreyregular';
@@ -89,19 +88,10 @@ p{
     color: #a0a0a0;
     font-family: 'ralewayregular' , sans-serif;
 }
-.site-title a{
-    font-family: 'aubreyregular';
-    color: #ff9730;
-    padding-right: 30px;
-    padding-bottom: 20px;
-}
 .site-title img{
     width: 200px;
     height: 73px;
     margin-bottom: 20px; 
-    background-image: url('/images/headerlogo.png') !important;
-}
-.site-title{
     background-image: url('/images/headerlogo.png') !important;
 }
 .grid_5_of_12{
@@ -112,12 +102,6 @@ p{
     width: 25%;
     text-align: center;
 }
-.grid_8_of_12{
-    background-color: #111111;
-    width: 100%;
-    padding: 0% 5%;
-    
-}
 .grid_7_of_12{
     background-color: #515151;   
     width: 1080px;
@@ -126,18 +110,48 @@ p{
     padding-right: 100px;
     padding-left: 100px;
 }
+.grid_8_of_12{
+    background-color: #111111;
+    width: 100%;
+    padding: 0% 5%;  
+}
+.grid_6_of_12.search-container{
+    float:right;
+    margin-left: 80px;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 230px;
+}
+.site-header input[type="text"]{
+    border-radius: 20px;
+}
+.fa{
+    color: #fff;
+}
+.site-header form{
+    background-color: #000;
+    border-radius: 20px;
+    width: 215px;
+    -webkit-transition: background-color .5s; /* For Safari 3.1 to 6.0 */
+    transition: background-color .5s;
+}
+.site-header form:hover{
+    background-color: #ff9730;
+    border-radius: 20px;
+    width: 215px;
+}
+/*
+------
+NAVIGATION
+------
+*/
 .site-header{
     width: 1080px;
     background-color: #252525 !important;
 }
 header .main-navigation {
     width: 745px;
-	}
-/*
-------
-NAVIGATION
-------
-*/
+}
 .main-navigation{
     margin: 0px auto;
     text-align: center;
@@ -274,13 +288,14 @@ a:hover, a:active{
 ------
 PAGE SPECIFIC CONTENT
 ------
-ABOUT: page-id-2
-FEATURED: pade-id-7
+ABOUT: page-id-128
+FEATURED: pade-id-129
 GENRES: pade-id-9
 EVENTS: page-id-11
 CONTENT: page-id-13
 */
 
+/*FEATURED SECTION*/
 body.page-id-129 #bannercontainer{
     display: block;
     height: 125px;
@@ -299,6 +314,7 @@ body.page-id-129 h2.title, .title a{
 body.page-id-129 .entry-content{
     background-color: #111111;
 }
+/*ABOUT SECTION*/
 body.page-id-128 #bannercontainer{
     display: block;
     height: 125px;
@@ -320,7 +336,6 @@ body.page-id-128 .entry-content{
 POST PAGE STYLING
 ------
 */
-
 .post-categories a, .post-tags a{
     -webkit-transition: background-color .5s; /* For Safari 3.1 to 6.0 */
     transition: background-color .5s;
@@ -380,7 +395,6 @@ FOOTER
 .fa-stack-1x{
     padding-top: 14px;
 }
-
 /*
 ------
 MEDIA QUIRIES
@@ -390,7 +404,6 @@ MEDIA QUIRIES
 @media only screen and (min-width: 1600px){
    
 }
-
 @media only screen and (max-width: 1100px){
     .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
         width: 960px;
@@ -471,5 +484,4 @@ MEDIA QUIRIES
         font-family: Arial, Helvetica, Sans-serif;
     }
 }
-
 }

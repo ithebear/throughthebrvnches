@@ -55,6 +55,16 @@
 	<div id="headercontainer">
 
 		<header id="masthead" class="site-header row" role="banner">
+                    <div class="col grid_6_of_12 search-container">
+                    <form role="search" method="get" id="searchform" class="searchform" action="<?php echo site_url();?>">
+                        <label class="assistive-text" for="s">Search for:</label>
+                        <div class="inner-addon left-addon">
+                            <input type="text" value="" name="s" id="s" placeholder="Search">
+                            <i class="fa fa-search"></i>
+                            <!--<input type="submit" id="searchsubmit" value="Search">-->
+                        </div>
+                    </form>
+                </div>
 			<div class="col grid_5_of_12 site-title">
 				<h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" rel="home">
