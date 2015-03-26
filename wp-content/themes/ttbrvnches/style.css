@@ -348,18 +348,15 @@ CONTENT: page-id-13
 /*FEATURED SECTION*/
 body.page-id-129 #bannercontainer{
     display: block;
-    height: 125px;
-    background-color: #111111;
+    height: 175px;
+    background-color: #252525;
     background-image: url('images/monthlyfeature.png');
     background-repeat: no-repeat;
-    background-position: center top; 
+    background-position: center; 
 }
 body.page-id-129 .entry-header{
     margin: 0px;
     margin: 0rem;
-}
-body.page-id-129 h2.title, .title a{
-    margin-top: 20px;
 }
 body.page-id-129 .entry-content{
     background-color: #111111;
@@ -370,22 +367,34 @@ body.page-id-129 .grid_9_of_12{
 /*ABOUT SECTION*/
 body.page-id-128 #bannercontainer{
     display: block;
-    height: 125px;
-    background-color: #111111;
+    height: 175px;
+    background-color: #252525;
     background-image: url('images/about.png');
     background-repeat: no-repeat;
-    background-position: center top; 
+    background-position: center; 
 }
 body.page-id-128 .entry-header{
     margin: 0px;
     margin: 0rem;
 }
-body.page-id-128 .entry-content{
+body.page-id-128 .entry-content, body.page-id-9 .entry-content{
     background-color: #111111;
-    padding: 10px 25px;
+    padding: 0px 25px;
 }
 body.page-id-128 .grid_9_of_12{
     display:none;
+}
+body.page-id-9 #bannercontainer{
+    display: block;
+    height: 175px;
+    background-color: #252525;
+    background-image: url('images/genres.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+body.page-id-9 .entry-header{
+    margin: 0px;
+    margin: 0rem;
 }
 
 body.page-id-9 .grid_9_of_12{
@@ -399,6 +408,31 @@ body.page-id-11 .grid_9_of_12{
 body.page-id-13 .grid_9_of_12{
     display:none;
 }
+
+/*
+------
+CONTACT FORM
+------
+*/
+.cntctfrm_contact_form{
+    padding: 0 35%;
+}
+.cntctfrm_contact_form *{
+    color: #FF9730;
+    padding: 0 0;
+}
+.cntctfrm_contact_form input[type="text"], .cntctfrm_contact_form textarea{
+    background-color: #252525;
+    color: #fff;
+}
+.cntctfrm_contact_form input[type="text"], .cntctfrm_contact_form input[type="file"], .cntctfrm_contact_form select, .cntctfrm_contact_form textarea, .widget .cntctfrm_contact_form input[type="text"], .widget .cntctfrm_contact_form input[type="file"], .widget .cntctfrm_contact_form select, .widget .cntctfrm_contact_form textarea{
+    padding-left: 50px;
+}
+    body.page-id-13 h3{
+        margin-top: 30px;
+        color: #FF9730;
+    }
+
 /*
 ------
 POST PAGE STYLING
@@ -492,10 +526,16 @@ MEDIA QUIRIES
     .grid_9_of_12:hover{
         background-image: url('images/grid9logohovermed.png') !important; 
     }
+    .cntctfrm_contact_form{
+        padding: 0 30%;
+    }
 }
 @media only screen and (max-width: 867px){
     .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
         width: 780px;
+    }
+    .cntctfrm_contact_form{
+        padding: 0 25%;
     }
 }
 @media only screen and (max-width: 800px){
@@ -512,95 +552,124 @@ MEDIA QUIRIES
         font-size: 24px;
         font-size: 1.5rem;
     }
-    @media only screen and (max-width: 720px){
-        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
-            width: 620px;
-        }
+    .cntctfrm_contact_form{
+        padding: 0 20%;
     }
-    @media only screen and (max-width: 640px){
-        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer {
-            width: 520px;
-        }
-        h1{
-            text-align: center;
-        }
+}
+@media only screen and (max-width: 720px){
+    .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
+        width: 620px;
     }
-    @media only screen and (max-width: 540px){
-        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
-            width: 435px;
-        }
-        header .grid_5_of_12{
-            display: none;
-        }
-        .site-header{
-            height: 80px;
-        }
-        .grid_9_of_12{
-            width: 100%;
-            height: 108px;
-            margin: 62px 0px 31px 0px;
-            background-image: url('images/grid9logonativespacesml.png') !important; 
-            -webkit-transition: background-image .5s; /* For Safari 3.1 to 6.0 */
-            transition: background-image .5s;
-        }
-        .grid_9_of_12:hover{
-            background-image: url('images/grid9logonativespacesml.png') !important; 
-        }
-        body.page-id-128 .entry-content, body.page-id-129 .entry-content, body.page-id-9 .entry-content, body.page-id-11 .entry-content, body.page-id-13 .entry-content{
-            padding: 10px 0px;
-        }
+    .cntctfrm_contact_form{
+        padding: 0 15%;
     }
-    @media only screen and (max-width: 440px){
-        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
-            width: 340px;
-        }
-        body.page-id-128 #bannercontainer{
-            height: 82px;
-            background-image: url('images/Aboutsml.png') !important;
-        }
-        body.page-id-129 #bannercontainer{
-            height: 82px;
-            background-image: url('images/MonthlyFeaturesml.png') !important;
-        }
-        p{
-            padding: 0px;
-            padding: 0rem;
-        }
+}
+@media only screen and (max-width: 640px){
+    .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer {
+        width: 520px;
+    }
+    h1{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 540px){
+    .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
+        width: 435px;
+    }
+    .home .grid_9_of_12{
+        display: none;
+    }
+    header .grid_5_of_12{
+        background-color: #252525;
+        padding-top: 0px;
+    }
+    .grid_6_of_12.search-container{
+        padding-bottom: 20px;
+    }
+    .site-header{
+        height: 80px;
+    }
+    .site-title a{
+        padding-right: 30px;
+    }
+    .home *{
+        text-align: center;
+    }
+    .grid_9_of_12{
+        width: 100%;
+        height: 108px;
+        margin: 62px 0px 31px 0px;
+        background-image: url('images/grid9logonativespacesml.png') !important; 
+        -webkit-transition: background-image .5s; /* For Safari 3.1 to 6.0 */
+        transition: background-image .5s;
+    }
+    .grid_9_of_12:hover{
+        background-image: url('images/grid9logonativespacesml.png') !important; 
+    }
+    body.page-id-128 .entry-content, body.page-id-129 .entry-content, body.page-id-9 .entry-content, body.page-id-11 .entry-content, body.page-id-13 .entry-content{
+        padding: 10px 0px;
+    }
+}
+@media only screen and (max-width: 440px){
+    .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
+        width: 340px;
+    }
+    body.page-id-128 #bannercontainer{
+        height: 82px;
+        background-image: url('images/Aboutsml.png') !important;
+    }
+    body.page-id-129 #bannercontainer{
+        height: 82px;
+        background-image: url('images/MonthlyFeaturesml.png') !important;
+    }
+    p{
+        padding: 0px;
+        padding: 0rem;
+    }
+    body.page-id-13 a{
+        font-size: 12px;
+        font-size: 0.8rem;
+    }
+    img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"]{
+        margin: 20px 0px;
+    }
+    .fa-stack-1x{
+    padding-top: 9px;
+}
 
+}
+@media only screen and (max-width: 360px){
+    .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
+        width: 300px;
     }
-    @media only screen and (max-width: 360px){
-        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
-            width: 300px;
-        }
-        .title a, a.readmore{
-            font-size: 14px;
-            font-size: 1rem;
-        }
-        .title a{
-            padding: 0 5px;
-        }
-        p{
-            font-size: 10px;
-            font-size: 0.7rem;
-        }
-        img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"]{
-            display: none;
-        }
-        .home.page .site-content{
-            padding: 0px;
-        }
+    .title a, a.readmore{
+        font-size: 14px;
+        font-size: 1rem;
     }
-    @media only screen and (max-width: 310px){
-        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
-            width: 100%;
-        }
-        html #wpadminbar{
-            min-width: 240px;
-        }
+    .title a{
+        padding: 0 5px;
     }
-    @media print{
-        body, html, p, ol, ul, a, blockquote, .nav-menu, h1,h2,h3,h4,h5,h6{
-            font-family: Arial, Helvetica, Sans-serif;
-        }
+    p{
+        font-size: 10px;
+        font-size: 0.7rem;
+    }
+    img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"]{
+        display: none;
+    }
+    .home.page .site-content{
+        padding: 0px;
+    }
+}
+@media only screen and (max-width: 310px){
+    .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
+        width: 100%;
+    }
+    html #wpadminbar{
+        min-width: 240px;
+    }
+}
+@media print{
+    body, html, p, ol, ul, a, blockquote, .nav-menu, h1,h2,h3,h4,h5,h6{
+        font-family: Arial, Helvetica, Sans-serif;
     }
 }
