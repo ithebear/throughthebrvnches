@@ -122,5 +122,9 @@
 			} ?>
 		</div> <!-- /.banner.row -->
 	</div> <!-- /#bannercontainer -->
+        <div class="col grid_9_of_12 site-title">			
+			</div> <!-- /.col.grid_9_of_12 -->
+        <div class="col grid_1_of_12 site-title">			
+	</div> <!-- /.col.grid_1_of_12 -->
 
 	<div id="maincontentcontainer">

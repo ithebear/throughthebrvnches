@@ -10,36 +10,36 @@ Template: quark
 @import url('../quark/style.css');
 /*Load webfonts*/
 @font-face{ 
-	font-family: 'aubreyregular';
-	src: url('fonts/Aubrey regular-webfont.eot');
-	src: url('fonts/Aubrey regular-webfont.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Aubrey regular-webfont.woff') format('woff'),
-	     url('fonts/Aubrey regular-webfont.ttf') format('truetype'),
-	     url('fonts/Aubrey regular-webfont.svg#webfont') format('svg');
+    font-family: 'aubreyregular';
+    src: url('fonts/Aubrey regular-webfont.eot');
+    src: url('fonts/Aubrey regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Aubrey regular-webfont.woff') format('woff'),
+        url('fonts/Aubrey regular-webfont.ttf') format('truetype'),
+        url('fonts/Aubrey regular-webfont.svg#webfont') format('svg');
 }
 @font-face{ 
-	font-family: 'ralewayregular';
-	src: url('fonts/Raleway regular-webfont.eot');
-	src: url('fonts/Raleway regular-webfont.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Raleway regular-webfont.woff') format('woff'),
-	     url('fonts/Raleway regular-webfont.ttf') format('truetype'),
-	     url('fonts/Raleway regular-webfont.svg#webfont') format('svg');
+    font-family: 'ralewayregular';
+    src: url('fonts/Raleway regular-webfont.eot');
+    src: url('fonts/Raleway regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway regular-webfont.woff') format('woff'),
+        url('fonts/Raleway regular-webfont.ttf') format('truetype'),
+        url('fonts/Raleway regular-webfont.svg#webfont') format('svg');
 }
 @font-face{ 
-	font-family: 'ralewaylight';
-	src: url('fonts/RalewayLight-webfont.eot');
-	src: url('fonts/RalewayLight-webfont.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/RalewayLight-webfont.woff') format('woff'),
-	     url('fonts/RalewayLight-webfont.ttf') format('truetype'),
-	     url('fonts/RalewayLight-webfont.svg#webfont') format('svg');
+    font-family: 'ralewaylight';
+    src: url('fonts/RalewayLight-webfont.eot');
+    src: url('fonts/RalewayLight-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/RalewayLight-webfont.woff') format('woff'),
+        url('fonts/RalewayLight-webfont.ttf') format('truetype'),
+        url('fonts/RalewayLight-webfont.svg#webfont') format('svg');
 }
 @font-face{ 
-	font-family: 'comfortaaregular';
-	src: url('fonts/Comfortaa regular-webfont.eot');
-	src: url('fonts/Comfortaa regular-webfont.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Comfortaa regular-webfont.woff') format('woff'),
-	     url('fonts/Comfortaa regular-webfont.ttf') format('truetype'),
-	     url('fonts/Comfortaa regular-webfont.svg#webfont') format('svg');
+    font-family: 'comfortaaregular';
+    src: url('fonts/Comfortaa regular-webfont.eot');
+    src: url('fonts/Comfortaa regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Comfortaa regular-webfont.woff') format('woff'),
+        url('fonts/Comfortaa regular-webfont.ttf') format('truetype'),
+        url('fonts/Comfortaa regular-webfont.svg#webfont') format('svg');
 }
 /*
 -------
@@ -94,9 +94,14 @@ p{
     margin-bottom: 20px; 
     background-image: url('/images/headerlogo.png') !important;
 }
+.site-title h1{
+    margin-top: 0px;
+    margin-top: 0rem;
+}
 .grid_5_of_12{
-    width: 1080px;
-    text-align: center;
+    width: 100%;
+    text-align: left;
+    padding-top: 20px;
 }
 .grid_4_of_12{
     width: 25%;
@@ -104,11 +109,11 @@ p{
 }
 .grid_7_of_12{
     background-color: #515151;   
-    width: 1080px;
+    width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .grid_8_of_12{
     background-color: #111111;
@@ -124,8 +129,15 @@ p{
 }
 .site-header input[type="text"]{
     border-radius: 20px;
+    outline: none;
+    background-color: #515151;
+    -webkit-transition: all .5s; /* For Safari 3.1 to 6.0 */
+    transition: all .5s;
 }
-.fa{
+.site-header input[type="text"]:focus {
+    background-color: #fff;
+}
+.fa.fa-search {
     color: #fff;
 }
 .site-header form{
@@ -135,22 +147,53 @@ p{
     -webkit-transition: background-color .5s; /* For Safari 3.1 to 6.0 */
     transition: background-color .5s;
 }
-.site-header form:hover{
+.site-header form:hover, .site-header form:active{
     background-color: #ff9730;
     border-radius: 20px;
     width: 215px;
 }
+.grid_5_of_12.col{
+    margin-left: 0px;
+}
+.grid_9_of_12{
+    width: 100%;
+    height: 498px;
+    margin: 225px 0px 122px 0px;
+    background-image: url('images/grid9logonativespace.png') !important; 
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image .5s; /* For Safari 3.1 to 6.0 */
+    transition: background-image .5s;
+    display: none;
+}
+.grid_9_of_12:hover{
+    background-image: url('images/grid9logohover.png') !important; 
+
+}
+.home .grid_9_of_12{
+    display: block;
+}
+/*
+.grid_1_of_12{
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    background-color: #252525;
+}
+*/
 /*
 ------
 NAVIGATION
 ------
 */
 .site-header{
-    width: 1080px;
+    width: 100%;
     background-color: #252525 !important;
+    max-width: 9999px;
 }
 header .main-navigation {
     width: 745px;
+    float: left;
 }
 .main-navigation{
     margin: 0px auto;
@@ -191,7 +234,7 @@ header .main-navigation {
     -webkit-transition: background-color .5s; /* For Safari 3.1 to 6.0 */
     transition: background-color .5s; 
 }
- 
+
 .main-small-navigation a, .main-navigation a{
     color: #ffffff;
 }
@@ -218,7 +261,6 @@ CONTENT
 }
 h2.title, .title a{
     color: #ffffff;
-    background-color: #515151;
     font-size: 35px;
     font-size: 2.25rem;
     font-family: 'ralewaylight';
@@ -227,6 +269,9 @@ h2.title, .title a{
     -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
     transition: color .5s;
     padding: 15px 0;   
+}
+h2.title{
+    background-color: #515151;
 }
 .post-content{
     margin-bottom: 45px;
@@ -243,6 +288,7 @@ a.readmore{
     font-size: 1.2rem;
     padding: 10px 0;
     margin: 0px; 
+    text-decoration: none;
     text-align: center;
     -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
     transition: color .5s;
@@ -254,11 +300,15 @@ img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"]{
     margin: 20px;
 }
 body.custom-background{
-    background-image: url('images/bg.jpg') !important;
-    background-color: #000;
+    /* Location of the image */
+    background-image: url('images/citybg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
 #maincontentcontainer{
-    background-color: #111111;
     width: 1080px;
     margin-left: auto;
     margin-right: auto;
@@ -314,6 +364,9 @@ body.page-id-129 h2.title, .title a{
 body.page-id-129 .entry-content{
     background-color: #111111;
 }
+body.page-id-129 .grid_9_of_12{
+    display:none;
+}
 /*ABOUT SECTION*/
 body.page-id-128 #bannercontainer{
     display: block;
@@ -330,6 +383,21 @@ body.page-id-128 .entry-header{
 body.page-id-128 .entry-content{
     background-color: #111111;
     padding: 10px 25px;
+}
+body.page-id-128 .grid_9_of_12{
+    display:none;
+}
+
+body.page-id-9 .grid_9_of_12{
+    display:none;
+}
+
+body.page-id-11 .grid_9_of_12{
+    display:none;
+}
+
+body.page-id-13 .grid_9_of_12{
+    display:none;
 }
 /*
 ------
@@ -402,44 +470,39 @@ MEDIA QUIRIES
 */
 
 @media only screen and (min-width: 1600px){
-   
+
 }
 @media only screen and (max-width: 1100px){
-    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
         width: 960px;
-    }
-    header .main-navigation {
-        width: 680px;
     }
 }
 @media only screen and (max-width: 976px){
-    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
         width: 850px;
     }
-    header .main-navigation {
-	margin-top: 0;
-	float: none;
-        width: 630px;
+    .grid_9_of_12{
+        width: 100%;
+        height: 269px;
+        margin: 112px 0px 61px 0px;
+        background-image: url('images/grid9logonativespacemed.png') !important; 
+        -webkit-transition: background-image .5s; /* For Safari 3.1 to 6.0 */
+        transition: background-image .5s;
     }
-    .grid_7_of_12{
-        padding-bottom: 10px;
+    .grid_9_of_12:hover{
+        background-image: url('images/grid9logohovermed.png') !important; 
     }
 }
 @media only screen and (max-width: 867px){
-    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
         width: 780px;
     }
 }
 @media only screen and (max-width: 800px){
-    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
+    .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
         width: 700px;
     }
-    .grid_7_of_12{
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
-     .main-navigation{
+    .main-navigation{
         display:none;
     }
     .primary-mobile-nav{
@@ -448,40 +511,96 @@ MEDIA QUIRIES
     h2.title, .title a, a.readmore{
         font-size: 24px;
         font-size: 1.5rem;
-}
-@media only screen and (max-width: 720px){
-    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
-        width: 620px;
     }
-}
-@media only screen and (max-width: 640px){
-    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
-        width: 520px;
+    @media only screen and (max-width: 720px){
+        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
+            width: 620px;
+        }
     }
-}
-@media only screen and (max-width: 540px){
-    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer,.grid_5_of_12.site-title, .grid_7_of_12{
-        width: 420px;
+    @media only screen and (max-width: 640px){
+        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer {
+            width: 520px;
+        }
+        h1{
+            text-align: center;
+        }
     }
-}
-@media only screen and (max-width: 440px){
-    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
-        width: 340px;
+    @media only screen and (max-width: 540px){
+        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
+            width: 435px;
+        }
+        header .grid_5_of_12{
+            display: none;
+        }
+        .site-header{
+            height: 80px;
+        }
+        .grid_9_of_12{
+            width: 100%;
+            height: 108px;
+            margin: 62px 0px 31px 0px;
+            background-image: url('images/grid9logonativespacesml.png') !important; 
+            -webkit-transition: background-image .5s; /* For Safari 3.1 to 6.0 */
+            transition: background-image .5s;
+        }
+        .grid_9_of_12:hover{
+            background-image: url('images/grid9logonativespacesml.png') !important; 
+        }
+        body.page-id-128 .entry-content, body.page-id-129 .entry-content, body.page-id-9 .entry-content, body.page-id-11 .entry-content, body.page-id-13 .entry-content{
+            padding: 10px 0px;
+        }
     }
-}
-@media only screen and (max-width: 360px){
-    .site-header, .super-navigation, .main-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
-        width: 300px;
+    @media only screen and (max-width: 440px){
+        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
+            width: 340px;
+        }
+        body.page-id-128 #bannercontainer{
+            height: 82px;
+            background-image: url('images/Aboutsml.png') !important;
+        }
+        body.page-id-129 #bannercontainer{
+            height: 82px;
+            background-image: url('images/MonthlyFeaturesml.png') !important;
+        }
+        p{
+            padding: 0px;
+            padding: 0rem;
+        }
+
     }
-}
-@media only screen and (max-width: 310px){
-    .site-header, .super-navigation, .banner, .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer, .grid_5_of_12.site-title, .grid_7_of_12{
-        width: 220px;
+    @media only screen and (max-width: 360px){
+        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
+            width: 300px;
+        }
+        .title a, a.readmore{
+            font-size: 14px;
+            font-size: 1rem;
+        }
+        .title a{
+            padding: 0 5px;
+        }
+        p{
+            font-size: 10px;
+            font-size: 0.7rem;
+        }
+        img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"]{
+            display: none;
+        }
+        .home.page .site-content{
+            padding: 0px;
+        }
     }
-}
-@media print{
-    body, html, p, ol, ul, a, blockquote, .nav-menu, h1,h2,h3,h4,h5,h6{
-        font-family: Arial, Helvetica, Sans-serif;
+    @media only screen and (max-width: 310px){
+        .site-content, .site-footer, .sponsor-content, #maincontentcontainer, #bannercontainer{
+            width: 100%;
+        }
+        html #wpadminbar{
+            min-width: 240px;
+        }
     }
-}
+    @media print{
+        body, html, p, ol, ul, a, blockquote, .nav-menu, h1,h2,h3,h4,h5,h6{
+            font-family: Arial, Helvetica, Sans-serif;
+        }
+    }
 }
