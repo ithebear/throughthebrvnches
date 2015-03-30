@@ -53,19 +53,21 @@
 	<div class="visuallyhidden skip-link"><a href="#primary" title="<?php esc_attr_e( 'Skip to main content', 'quark' ); ?>"><?php esc_html_e( 'Skip to main content', 'quark' ); ?></a></div>
 
 	<div id="headercontainer">
+            
 
 		<header id="masthead" class="site-header row" role="banner">
                     <div class="col grid_6_of_12 search-container">
-                    <form role="search" method="get" id="searchform" class="searchform" action="<?php echo site_url();?>">
+                    
+                </div>
+			<div class="col grid_5_of_12 site-title">
+                            <form role="search" method="get" id="searchform" class="searchform" action="<?php echo site_url();?>">
                         <label class="assistive-text" for="s">Search for:</label>
                         <div class="inner-addon left-addon">
                             <input type="text" value="" name="s" id="s" placeholder="Search">
                             <i class="fa fa-search"></i>
                             <!--<input type="submit" id="searchsubmit" value="Search">-->
                         </div>
-                    </form>
-                </div>
-			<div class="col grid_5_of_12 site-title">
+                            </form>
 				<h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" rel="home">
 						<?php 
@@ -126,5 +128,26 @@
 			</div> <!-- /.col.grid_9_of_12 -->
         <div class="col grid_1_of_12 site-title">			
 	</div> <!-- /.col.grid_1_of_12 -->
+        
 
 	<div id="maincontentcontainer">
+            <div class="col grid_3_of_12">
+                <a href="http://throughthebrvnches.com/?page_id=128">
+                <div class="col grid_4_of_12 about">
+                </div> </a>
+                <a href="http://throughthebrvnches.com/?page_id=129">
+                <div class="col grid_4_of_12 featured">			
+                </div></a>
+                <a href="http://throughthebrvnches.com/?page_id=9">
+                <div class="col grid_4_of_12 genres">			
+                </div></a>
+                <a href="http://throughthebrvnches.com/?page_id=11">
+                <div class="col grid_4_of_12 events">			
+                </div></a>
+                <a href="http://throughthebrvnches.com/?page_id=13">
+                <div class="col grid_4_of_12 contact">			
+                </div></a>
+            </div>
+            
+            
+        </div><!-- /.col.grid_4_of_12 -->
